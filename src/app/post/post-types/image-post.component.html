@@ -1,0 +1,28 @@
+<ng-container [ngSwitch]="getOrder()">
+
+  <img *ngSwitchCase="0" class="card-img-top" src="{{content.imageUrl}}">
+
+  <ngb-carousel *ngSwitchCase="1">
+    <ng-template ngbSlide *ngFor="let url of content.imageUrl">
+      <div >
+        <img [src]="url" class="img-fluid d-block mx-auto">
+      </div>
+    </ng-template>
+  </ngb-carousel>
+
+  <ng-container *ngSwitchCase="2">
+    <div class="row no-gutters justify-content-center" *ngFor="let row of content.imageUrl">
+      <div class="col my-auto" *ngFor="let url of row">
+        <img class="img-fluid" style="width: 100%" [src]="url">
+      </div>
+    </div>
+  </ng-container>
+
+</ng-container>
+<div class="card-body">
+  <h3 *ngIf="content.title" class="card-title">
+    {{content.title}}
+  </h3>
+  {{order}}
+  {{content.body}}
+</div>

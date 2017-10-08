@@ -1,0 +1,10 @@
+<div class="embed-responsive video-{{content.videoHost}}">
+  <iframe class="embed-responsive-item" [src]="videoUrl" allowfullscreen></iframe>
+</div>
+<div class="card-body">
+  <h3 *ngIf="content.title" class="card-title">
+    {{content.title}}
+  </h3>
+  {{order}}
+  {{content.body}}
+</div>

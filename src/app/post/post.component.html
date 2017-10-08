@@ -1,0 +1,31 @@
+<div class="card my-4" [ngSwitch]="post.postType">
+  <div class="card-header py-2">
+    <small>
+      <a href="{{post.poster.url}}" class="text-dark">{{post.poster.username}}</a>
+      <i class="fa fa-retweet"></i>
+      <a href="{{post.source.url}}" class="text-dark">{{post.source.username}}</a>
+    </small>
+  </div>
+  <text-post *ngSwitchCase="'text'" [content]="post.content"></text-post>
+  <image-post *ngSwitchCase="'image'" [content]="post.content"></image-post>
+  <video-post *ngSwitchCase="'video'" [content]="post.content"></video-post>
+  <audio-post *ngSwitchCase="'audio'" [content]="post.content"></audio-post>
+  <div class="row card-footer">
+    <div class="col">
+      <span class="mx-1" *ngFor="let tag of post.tags">
+        <a href=# class="text-secondary">#{{tag}}</a>
+      </span>
+    </div>
+    <small class="col col-auto ml-auto">
+      <div class="btn-group btn-group-sm">
+        <a class="btn btn-primary" href=#>
+          <i class="fa fa-retweet"></i>
+        </a>
+        <a class="btn btn-primary" href=#>
+          <i class="fa fa-heart"></i>
+        </a>
+      </div>
+    </small>
+  </div>
+</div>
+
