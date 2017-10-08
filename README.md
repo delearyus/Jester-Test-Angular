@@ -1,7 +1,7 @@
 # Jester
 
 **Jester** is a concept for a fully decentralized/federated Social Network.
-This is a semi-functional mockup for the user interface, build using Angular.
+This is a semi-functional mockup for the user interface, built using Angular.
 
 Currently, the interface contains data structures for representation of:
 
