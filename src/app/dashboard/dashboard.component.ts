@@ -13,6 +13,6 @@ export class DashboardComponent implements OnInit {
   constructor(private postService: PostService) { }
   posts = [];
   ngOnInit(): void {
-    this.postService.getPosts().then(posts => this.posts = posts);
+    this.postService.getPostsWithDelay().then(posts => this.posts = posts);
   }
 }

@@ -52,7 +52,8 @@ let tp3: TextPost = {
 
 let ip1: ImagePost = {
     title: null,
-    body: "Just a cute lil' kitten",
+    //body: "Just a cute lil' kitten",
+    body: null,
     imageUrl: "https://i.ytimg.com/vi/W-PBFMECvTE/maxresdefault.jpg"
 }
 

@@ -19,7 +19,7 @@
   </ng-container>
 
 </ng-container>
-<div class="card-body">
+<div *ngIf="content.title || content.body" class="card-body">
   <h3 *ngIf="content.title" class="card-title">
     {{content.title}}
   </h3>
