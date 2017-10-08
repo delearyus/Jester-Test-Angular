@@ -24,3 +24,10 @@ modifyiing the application to actually dynamically fetch posts will be much
 easier and won't require huge amounts of reworking. Fetching of users and posts
 are handled through their own promise-based services, which make an easy entry 
 point for dynamic data.
+
+## Goals for the Future
+
++ Hosted, rather than embedded, content
++ Better markup/styling support for posts
++ Pages for information about users
++ More types of posts
